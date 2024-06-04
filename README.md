@@ -1,6 +1,12 @@
 # Real-Time User Streaming Pipeline
 
-This project is a real-time user streaming pipeline designed to process and analyze streaming data efficiently. The pipeline utilizes Apache Spark for real-time data processing and Docker for containerization.
+The Real-Time User Streaming Pipeline is designed to handle high-velocity data streams, process the data in real-time, and store the results for further analysis. The pipeline architecture consists of:
+
+- **Apache Kafka**: Used for real-time data streaming.
+- **Apache Airflow**: Orchestrates the workflow, scheduling tasks to manage the flow of data to Kafka
+- **Apache Spark**: Utilized for real-time data processing.
+- **Apache Cassandra**: A highly scalable NoSQL database for storing processed data.
+- **Docker**: Containerizing entire data engineering setup with Docker
 
 ## Installation
 
@@ -20,7 +26,7 @@ This project is a real-time user streaming pipeline designed to process and anal
    ```
 2. Build and start the Docker containers:
   ```bash
-  docker-compose up --build
+  docker-compose up -d
 ```
 3. Install the required Python packages:
    ```bash
