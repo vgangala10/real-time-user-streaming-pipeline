@@ -8,6 +8,9 @@ The Real-Time User Streaming Pipeline is designed to handle high-velocity data s
 - **Apache Cassandra**: A highly scalable NoSQL database for storing processed data.
 - **Docker**: Containerizing entire data engineering setup with Docker
 
+## System Architecture
+![System Architecture](./kafka.png)
+
 ## Installation
 
 ### Prerequisites
